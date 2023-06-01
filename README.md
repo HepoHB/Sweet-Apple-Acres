@@ -36,7 +36,7 @@
     - Integração de informações sobre o clima para auxiliar nas tomadas de decisão.
 
 -   Sistema de notificações:
-⋅⋅⋅- Envio de notificações automáticas para informar sobre eventos importantes.
+    - Envio de notificações automáticas para informar sobre eventos importantes.
 
 -   Gestão de clientes e fornecedores:
     - Registro de informações de clientes que compram os produtos e fornecedores que fornecem insumos ou serviços à fazenda.
