@@ -1,42 +1,45 @@
 # Sweet Apple Acres
-**Requisitos do Sistema de Gerenciamento do Rancho Maçã Doce**
+**Requisitos do Sistema de gestão do Rancho Maçã Doce**
 
 - Gerenciamento de colheitas de maçãs:
-    - Registrar a quantidade de maçãs colhidas em cada colheita.
-    - Calcular o total de maçãs colhidas em um determinado período.
+    - Registrar a quantidade de maçãs colhidas em cada colheita;
+    - Calcular o total de maçãs colhidas em um determinado período;
     - Adicionar e visualizar as informações de cada colheita, incluindo a data e a quantidade de maçãs colhidas.
 
 - Rastreamento das vendas de maçãs:
-    - Registrar a quantidade de maçãs vendidas em cada transação.
-    - Calcular o total de maçãs vendidas em um determinado período.
+    - Registrar a quantidade de maçãs vendidas em cada transação;
+    - Calcular o total de maçãs vendidas em um determinado período;
     - Adicionar e visualizar as informações de cada venda, incluindo a data e a quantidade de maçãs vendidas.
 
-- Controle do estoque de madeira:
-    - Adicionar e atualizar a quantidade de madeira disponível.
-    - Verificar o estoque atual de madeira.
+- Controle do estoque de recursos:
+    - Adicionar e atualizar a quantidade de recursos disponíveis;
+    - Verificar o estoque atual de recursos;
+    - Notificar recursos em falta.
 
 - Gestão dos animais da fazenda:
-    - Adicionar e remover animais, como cavalos e galinhas.
-    - Listar os animais atualmente na fazenda.
+    - Adicionar e remover animais, como cavalos e galinhas;
+    - Listar os animais atualmente na fazenda;
+    - Modificar status de cada animal (Prenha, doente, sadio).
 
 - Gestão dos funcionários da fazenda:
-    - Adicionar e remover funcionários.
-    - Listar os funcionários atualmente na fazenda.
+    - Adicionar e remover funcionários;
+    - Listar os funcionários atualmente na fazenda;
+    - Modificar status de cada funcionário (Férias, Afastado, Ativo).
 
 - Gerenciamento de produtos derivados da maçã:
     - Registro de produção, vendas e controle de estoque de produtos como sucos, compotas, tortas, etc.
 
 - Controle de despesas e receitas:
-    - Registro de despesas relacionadas à fazenda e receitas como vendas de produtos, aluguel de terrenos, etc.
+    - Registro de despesas relacionadas à fazenda e receitas como vendas de produtos, aluguel de terrenos, etc;
+    - Gerar controle dos ativos e passivos do rancho;
+    - Gerar DRE automaticamente ao fim do trimestre;
+    - Calcular indicadores financeiros (Endividamento, Liquidez, Rentabilidade, Eficiência).
 
--   Agenda de tarefas:
+-   Acompanhamento de tarefas:
     - Atribuição e acompanhamento das tarefas dos funcionários da fazenda.
 
 -   Monitoramento do clima:
     - Integração de informações sobre o clima para auxiliar nas tomadas de decisão.
-
--   Sistema de notificações:
-    - Envio de notificações automáticas para informar sobre eventos importantes.
 
 -   Gestão de clientes e fornecedores:
     - Registro de informações de clientes que compram os produtos e fornecedores que fornecem insumos ou serviços à fazenda.
