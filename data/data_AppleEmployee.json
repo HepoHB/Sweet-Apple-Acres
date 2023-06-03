@@ -1,0 +1,51 @@
+{"employees": [
+    {
+        "id": 0,
+        "name": "Granny Smith",
+        "gender": "Female",
+        "login": "mama",
+        "password": "12345",
+        "status": "Retired"
+    },
+    {
+        "id": 1,
+        "name": "Applejack",
+        "gender": "Female",
+        "login": "Applejack",
+        "password": "CiderRoad",
+        "status": "Active"
+    },
+    {
+        "id": 2,
+        "name": "Big Macintosh",
+        "gender": "Male",
+        "login": "BigMac",
+        "password": "senha",
+        "status": "Active"
+    },
+    {
+        "id": 3,
+        "name": "Apple Bloom",
+        "gender": "Female",
+        "login": "Applebloom",
+        "password": "crusaders",
+        "status": "Vacation"
+    },
+    {
+        "id": 4,
+        "name": "Braeburn",
+        "gender": "Male",
+        "login": "Braeburn",
+        "password": "Braeburn",
+        "status": "Active"
+    },
+    {
+        "id": 5,
+        "name": "Babs Seed",
+        "gender": "Female",
+        "login": "Babs",
+        "password": "4312",
+        "status": "Vacation"
+    }
+
+]}
