@@ -1,0 +1,81 @@
+<GridLayout>
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Line:
+            rectangle: self.x, self.y, self.width, self.height
+            width: 1
+
+<RootWidget>
+    GridLayout:
+    RelativeLayout:
+        size_hint: 1, 1
+        valign: 'middle'
+        halign: 'center'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        LoginSystem:
+
+<LoginSystem>
+    canvas.before:
+        Color:
+            rgba: 1,0.258,0.333, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    GridLayout:
+        size_hint: 0.5, 0.2
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        valign: 'middle'
+        halign: 'center'
+        rows: 2
+        GridLayout:
+            cows: 2
+            rows: 2
+            canvas:
+                Color:
+                    rgba: 0.945, 0.749, 0.596, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Label:
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1  # Cor preta
+                    Line:
+                        rectangle: self.x, self.y, self.width, self.height
+                        width: 1
+                text:'Login:'
+                size_hint: 0.25,.005
+                valign: 'middle'
+                halign: 'center'
+            TextInput:
+                id: inputLogin
+                spacing: '10dp'
+                size_hint: 1,.005
+                valign: 'middle'
+                halign: 'center'
+            Label:
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        rectangle: self.x, self.y, self.width, self.height
+                        width: 1
+                text:'Password:'
+                size_hint: 0.25,.005
+                valign: 'middle'
+                halign: 'center'
+            TextInput:
+                id: inputPassword
+                password: True
+                spacing: '10dp'
+                size_hint: 1,.005
+                valign: 'middle'
+                halign: 'center'
+        Button:
+            text:'Submit'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: 1.5,.6
+            valign: 'middle'
+            halign: 'center'
+            background_color: "#5995ED"
