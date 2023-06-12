@@ -20,3 +20,14 @@ class Employees:
         else:
             for index, row in self.employeesDataFrame.iterrows():
                 print(row[0]['name'])
+
+    def Login(self, enterLogin, enterPassword):
+        '''Parameters: (Login, Password)'''
+        returnal = False
+        for index, row in self.employeesDataFrame.iterrows():
+            if (str(enterLogin) == str(row[0]['login']) and str(enterPassword) == str(row[0]['password'])):
+                print("Login: " + row[0]['name'] + "  |  Password: " + row[0]['password'])
+                returnal = True
+                break
+        return returnal
+

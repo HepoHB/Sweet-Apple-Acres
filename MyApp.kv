@@ -54,6 +54,7 @@
                 size_hint: 1,.005
                 valign: 'middle'
                 halign: 'center'
+                multiline: False
             Label:
                 canvas.before:
                     Color:
@@ -72,6 +73,7 @@
                 size_hint: 1,.005
                 valign: 'middle'
                 halign: 'center'
+                multiline: False
         Button:
             text:'Submit'
             pos_hint: {'center_x': 0.5, 'center_y': 0.5}
@@ -79,3 +81,4 @@
             valign: 'middle'
             halign: 'center'
             background_color: "#5995ED"
+            on_press: root.loginButton()
