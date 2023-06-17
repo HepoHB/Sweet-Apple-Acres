@@ -1,5 +1,5 @@
-from kivy.app import App
 from requests.employees import Employees
+from kivy.app import App
 from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.popup import Popup
 from kivy.uix.label import Label
@@ -7,7 +7,6 @@ from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen, ScreenManager
 from kivy.lang import Builder
-
 
 class MyPopup(Popup):
     def __init__(self, **kwargs):
