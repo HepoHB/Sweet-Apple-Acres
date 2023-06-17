@@ -6,6 +6,7 @@ from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.screenmanager import Screen, ScreenManager
+from kivy.lang import Builder
 
 
 class MyPopup(Popup):
@@ -26,14 +27,21 @@ class MyPopup(Popup):
 class MyApp(App):
     title = "Sweet Apple Acres"
     def build(self):
-        return RootWidget()
+        Builder.load_file('kivy/login.kv')
+        Builder.load_file('kivy/rainbowDashboard.kv')
+
+        sm = ScreenManager()
+        sm.add_widget(RootWidget(name='loginScreen'))
+        sm.add_widget(RootScreen(name='rainbowDashboard'))
+
+        return sm
     
-class RootWidget(FloatLayout):
+class RootWidget(Screen):
     pass
 
 class LoginSystem(FloatLayout):
 
-        def loginButton(self):
+        def loginButton(self, screen_manager):
             enterLogin = self.ids.inputLogin.text
             enterPassword = self.ids.inputPassword.text
             if  enterLogin != "" and enterPassword  != "": 
@@ -41,6 +49,7 @@ class LoginSystem(FloatLayout):
                 print(JSONEmployees.Login(enterLogin.strip(), enterPassword.strip()))
                 if(JSONEmployees.Login(enterLogin.strip(), enterPassword.strip())):
                      print('Login OK')
+                     screen_manager.current  = 'rainbowDashboard'
                 else:
                     popup = MyPopup()
                     popup.open()
@@ -48,6 +57,8 @@ class LoginSystem(FloatLayout):
                 popup = MyPopup()
                 popup.open()
                 
+class RootScreen(Screen):
+    pass
 
 
 MyApp().run()

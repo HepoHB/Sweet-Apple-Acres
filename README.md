@@ -1,6 +1,16 @@
 # Sweet Apple Acres
 **Requisitos do Sistema de gestão do Rancho Maçã Doce**
 
+- Telas:
+    - [x] Login;
+    - [ ] Dashboard;
+    - [ ] Controle da Colheita;
+    - [ ] Controle dos Animais;
+    - [ ] Controle de Recursos;
+    - [ ] Gerenciamento dos Funcionários;
+    - [ ] Gestão Financeira;
+    - [ ] Relatórios;    
+
 - Gerenciamento de colheitas de maçãs:
     - [ ] Registrar a quantidade de maçãs colhidas em cada colheita;
     - [ ] Calcular o total de maçãs colhidas em um determinado período;
