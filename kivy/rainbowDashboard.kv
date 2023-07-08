@@ -1,8 +1,168 @@
 <RootScreen>:
     name: 'rainbowDashboard'
+    canvas:
+        Color:
+            rgba: 1,0.258,0.333, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
     BoxLayout:
-        Label:
-            text: 'Boas vindas ao Dashboard!'
-        Button:
-            text: 'Deslogar'
-            on_release: app.root.current = 'loginScreen'
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: None
+            width: 200
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 1
+                Line:
+                    width: 2
+                    rectangle: self.x - 1, self.y - 1, self.width + 2, self.height + 2
+            Image:
+                source: 'img/Applejack.jpeg'
+                allow_stretch: False
+            Label:
+                text: 'Applejack'
+            Button:
+                text: 'Colheita de Maçãs'
+                on_release: app.root.current = 'loginScreen'
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Vendas de Maçã'
+                on_release: app.root.current = 'loginScreen'
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Recursos da Fazenda'
+                on_release: app.root.current = 'loginScreen'
+            Button:
+                text: 'Animais'
+                on_release: app.root.current = 'loginScreen'
+            Button:
+                text: 'Recursos Equestres'
+                on_release: app.root.current = 'loginScreen'
+            Button:
+                text: 'Despesas'
+                on_release: app.root.current = 'loginScreen'
+            Button:
+                text: 'Deslogar'
+                on_release: app.root.current = 'loginScreen'
+        BoxLayout:
+            orientation: 'vertical'     
+            Label:
+                text: 'DIE BURIED ALIVE!'
+            Button:
+                text: 'Deslogar'
+                on_release: app.root.current = 'loginScreen'   
+            Button:
+                text: 'DESPLAY'
+                on_release: app.root.current = 'loginScreen'
+
+
+<RootScreen>:
+    name: 'rainbowDashboard'
+    canvas:
+        Color:
+            rgba: 1,0.258,0.333, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: None
+            width: 200
+            canvas:
+                Color:
+                    rgba: 0, 0, 0, 1
+                Line:
+                    width: 2
+                    rectangle: self.x - 1, self.y - 1, self.width + 2, self.height + 2
+            Image:
+                source: 'img/Applejack.jpeg'
+                allow_stretch: False
+            Label:
+                text: 'Applejack'
+            Button:
+                text: 'Colheita de Maçãs'
+                on_release: app.root.current = 'loginScreen'
+                background_color: "#5995ED"
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Vendas de Maçã'
+                on_release: app.root.current = 'loginScreen'
+                background_color: "#5995ED"
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Recursos da Fazenda'
+                on_release: app.root.current = 'loginScreen'
+                background_color: "#5995ED"
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Animais'
+                on_release: app.root.current = 'loginScreen'
+                background_color: "#5995ED"
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Recursos Equestres'
+                on_release: app.root.current = 'loginScreen'
+                background_color: "#5995ED"
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Despesas'
+                on_release: app.root.current = 'loginScreen'
+                background_color: "#5995ED"
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+            Button:
+                text: 'Deslogar'
+                on_release: app.root.current = 'loginScreen'
+                background_color: "#5995ED"
+                canvas.before:
+                    Color:
+                        rgba: 0, 0, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+        BoxLayout:
+            orientation: 'vertical'     
+            Label:
+                text: 'DIE BURIED ALIVE!'
+            
